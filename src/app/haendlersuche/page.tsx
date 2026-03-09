@@ -1,8 +1,11 @@
-"use client";
-
+import type { Metadata } from "next";
 import { AnimateIn } from "@/components/animate-in";
 import { PageLayout } from "@/components/page-layout";
 import { MapPin } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Händlersuche",
+};
 
 export default function HaendlersuchePage() {
   return (

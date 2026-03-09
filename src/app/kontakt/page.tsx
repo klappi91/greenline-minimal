@@ -1,8 +1,11 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimateIn } from "@/components/animate-in";
 import { PageLayout } from "@/components/page-layout";
+
+export const metadata: Metadata = {
+  title: "Kontakt",
+};
 
 export default function KontaktPage() {
   return (

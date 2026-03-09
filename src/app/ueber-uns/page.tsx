@@ -1,8 +1,10 @@
-"use client";
-
+import type { Metadata } from "next";
 import { AnimateIn } from "@/components/animate-in";
 import { PageLayout } from "@/components/page-layout";
-import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Über uns",
+};
 
 export default function UeberUnsPage() {
   return (

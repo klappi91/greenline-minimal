@@ -1,7 +1,10 @@
-"use client";
-
+import type { Metadata } from "next";
 import { AnimateIn } from "@/components/animate-in";
 import { PageLayout } from "@/components/page-layout";
+
+export const metadata: Metadata = {
+  title: "Datenschutz",
+};
 
 export default function DatenschutzPage() {
   return (
