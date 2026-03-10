@@ -1,11 +1,16 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimateIn } from "@/components/animate-in";
 import { PageLayout } from "@/components/page-layout";
 import { categories } from "@/lib/products";
 import { ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Produkte",
+  description:
+    "Alle Produktwelten von greenline: Teppichböden, Korkparkett, Wandgestaltung, Innendämmung, Öle & Wachse, Schutz & Pflege und mehr.",
+};
 
 export default function ProduktePage() {
   return (

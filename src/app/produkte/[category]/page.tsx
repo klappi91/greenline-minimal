@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -10,6 +11,24 @@ export function generateStaticParams() {
   return categories.map((category) => ({
     category: category.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}): Promise<Metadata> {
+  const { category: categorySlug } = await params;
+  const category = getCategoryBySlug(categorySlug);
+
+  if (!category) {
+    return { title: "Kategorie nicht gefunden" };
+  }
+
+  return {
+    title: `${category.name} — Produkte`,
+    description: category.description,
+  };
 }
 
 export default async function CategoryPage({

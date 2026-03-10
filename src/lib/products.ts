@@ -311,6 +311,36 @@ export const categories: ProductCategory[] = [
     ],
   },
   {
+    slug: "reinigung-und-zubehoer",
+    name: "Reinigung & Zubehör",
+    description:
+      "Professionelle Reinigungs- und Pflegegeräte für die optimale Pflege natürlicher Bodenbeläge — von Pflegemaschinen bis hin zu Polierpads und Wischmopps.",
+    image: "/images/_dsc6505_parkettpflege-slider.jpg",
+    products: [
+      {
+        slug: "polix-pflegemaschine",
+        name: "Polix-Pflegemaschine",
+        description:
+          "Professionelle Pflegemaschine für die schonende und effektive Reinigung und Pflege natürlicher Bodenbeläge.",
+        image: "/images/_dsc6505_parkettpflege-slider.jpg",
+      },
+      {
+        slug: "polierpads",
+        name: "Polierpads",
+        description:
+          "Hochwertige Polierpads für die maschinelle Bodenpflege — passend für die Polix-Pflegemaschine.",
+        image: "/images/_dsc6505_parkettpflege-slider.jpg",
+      },
+      {
+        slug: "baumwoll-wischmopp",
+        name: "Baumwoll-Wischmopp",
+        description:
+          "Natürlicher Baumwoll-Wischmopp für die schonende Feuchtreinigung empfindlicher Bodenbeläge.",
+        image: "/images/_dsc6505_parkettpflege-slider.jpg",
+      },
+    ],
+  },
+  {
     slug: "verlegezubehoer",
     name: "Verlegezubehör",
     description:
